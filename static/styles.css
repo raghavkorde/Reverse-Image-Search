@@ -1,0 +1,42 @@
+
+#box{
+    text-align:center;
+    background-color: rgba(176, 106, 179, .3);
+    max-width: 600px; 
+    margin: auto;
+    border-radius: 25px
+}
+
+#box1{
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 900px; 
+    margin: auto;
+    border-radius: 15px
+}
+
+#box2{
+    text-align:center;
+    background-color: rgba(255, 0, 0, 0.75);
+    width: 900px; 
+    margin: auto;
+    border-radius: 15px
+}
+
+#file_input{
+    padding: 10px;
+}
+body {
+    background-image:url('bg.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+#division
+{
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+}

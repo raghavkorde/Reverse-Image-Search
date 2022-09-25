@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {{ dropzone.load_css() }}
+    {{ dropzone.style('border: 5px dashed #b16ab3; margin: 20%; min-height: 200px;') }}
+{% endblock %}
+
+
+{% block title %}
+    Reverse Image Search
+{% endblock %}
+
+{% block main %}
+        <div id="box">
+            <div>
+                <br>
+                {{ dropzone.create('upload') }}
+                {{ dropzone.load_js() }}
+                {{ dropzone.config() }}
+            </div>
+            <br>
+            <h2>OR</h2>
+            <br>
+            <div style="width: 400px; margin: auto;">
+                <form method="POST" action="/get_url">
+                    <input class="form-control" type="url" name= "url" auto-complete="off" placeholder="Paste yout link here">
+                    <br>
+                    <input class="btn btn-primary mb-3" type="submit" value="Get Result">
+                </form>
+            </div>
+        </div>
+
+{% endblock %}
